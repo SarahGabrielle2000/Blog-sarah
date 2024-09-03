@@ -14,6 +14,6 @@ router.get("/contato", (req, res)=>{
 
 app.use(router)
 
-app.listen(3333, ()=>{
+app.listen(process.env.PORT || 3334, ()=>{
     console.log("servidor rodando")
 })
